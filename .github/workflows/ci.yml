@@ -17,5 +17,12 @@ jobs:
       - name: Build application
         run: echo "Building Application..."
 
+      - name: Print runtime version
+        run: |
+          echo "Node version:"
+          node --version
+          echo "npm version:"
+          npm --version
+
       - name: Test application
         run: echo "Running tests..."
